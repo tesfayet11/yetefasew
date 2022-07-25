@@ -1,0 +1,49 @@
+
+<div>
+  Welcome, {{getUser().firstName + " " + getUser().lastName + "(" + getUser().nickName + ")!"}}
+</div>
+<div class="row">
+  <div class="col-md-4">
+
+    <mat-card class="tp-card">
+      <mat-card-header>
+        <mat-card-title>Unaccepted trades</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p >
+          <a style="color: red;" routerLink="/accept-reject-trades">2</a>
+        </p>
+      </mat-card-content>
+    </mat-card>
+    <br/>
+    <mat-card class="tp-card">
+      <mat-card-header>
+        <mat-card-title>Response time</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p >
+          5.2 days
+        </p>
+      </mat-card-content>
+    </mat-card>
+    <br/>
+    <mat-card class="tp-card">
+      <mat-card-header>
+        <mat-card-title>My rank</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          Silver
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+
+  <div class="col-md-8" fxLayout="column" fxLayoutAlign="space-around start" >
+    <button mat-raised-button color="primary" (click)="navigateTo('list-item')">List Item</button>
+    <button mat-raised-button color="primary" (click)="navigateTo('my-items')">My Items</button>
+    <button mat-raised-button color="primary" (click)="navigateTo('search-items')">Search Items</button>
+    <button mat-raised-button color="primary" (click)="navigateTo('trade-history')">Trade History</button>
+  </div>
+</div>

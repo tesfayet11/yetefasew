@@ -1,0 +1,26 @@
+.form-container{
+  width:100%;
+  max-width:460px;
+  margin:8% auto 5%
+}
+
+.full-width{
+  width: 100%;
+}
+
+.top-padding{
+  padding-top: 3px;
+}
+
+.margin-left mat-radio-button:not(:first-child){
+  margin-left:10px;
+}
+
+
+
+hr {
+  display: block;
+  margin: 10px 0 10px 0;
+  border-top: 1px solid rgba(0, 0, 0, .12);
+  width: 100%
+}

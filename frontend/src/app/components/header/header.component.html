@@ -1,0 +1,8 @@
+<mat-toolbar>
+  <span>Trade Plaza</span>
+  <span class="tp-spacer"></span>
+  <button *ngIf="isAuthenticated()" mat-raised-button color="primary"  (click)="logout()">
+    Logout
+  </button>
+</mat-toolbar>
+<hr/>
